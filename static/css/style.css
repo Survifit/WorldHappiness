@@ -1,0 +1,11 @@
+.color-bg {
+    background-color: rgb(41, 66, 42);
+}
+
+.navbar-nav {
+    float: right !important;
+}
+
+.tableauPlaceholder {
+    margin-right: 8%;
+}
