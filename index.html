@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark color-bg">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark color-bg">
         <a class="navbar-brand" href="index.html">World Happiness</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,38 +34,208 @@
 
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Visualizations <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Visualizations </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#viz1">Global Happiness Score</a>
+                        <a class="dropdown-item" href="#viz2">Life Expectancy</a>
+                        <a class="dropdown-item" href="#viz3">GDP Per Capita</a>
+                        <a class="dropdown-item" href="#viz4">Region and Income</a>
+                        <a class="dropdown-item" href="#viz5">Happiness Ranking</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="statistics.html">Statistics </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About </a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container-fluid">
 
-        <div class="row">
-
-            <div class="col-md-12">
-                    <div class='tableauPlaceholder' id='viz1565050267139' style='margin-left: 8%; position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard1?:embed=y&amp;:display_count=y&amp;publish=yes' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565050267139');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='360px';vizElement.style.maxWidth='1280px';vizElement.style.width='100%';vizElement.style.minHeight='627px';vizElement.style.maxHeight='727px';vizElement.style.height='700px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>        
-                    <p> This space is reserved for explaining the visualization above.</p>
+        <div class="row" id='viz1'>
+            <div class="col-md-12" >
+                <div class='tableauPlaceholder' id='viz1565133802077' style='margin-left:10%; margin-top:50px; position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard1---&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='WorldHappinessAnalysis_15647983135240&#47;Dashboard1---' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard1---&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' /></object>
+                </div>
+                <script type='text/javascript'> var divElement = document.getElementById('viz1565133802077');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.minWidth = '360px'; vizElement.style.maxWidth = '1280px';
+                    vizElement.style.width = '100%'; vizElement.style.minHeight = '627px';
+                    vizElement.style.maxHeight = '727px'; vizElement.style.height = '700px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p style='text-align:center'><strong>The Americas, Western Europe and Australia concentrate the majority
+                        of the highest scores. Asia and mostly Africa have most of the lowest scores.</strong></p>
             </div>
         </div>
-        <div class="row">
-
+        <div class="row" id='viz2'>
             <div class="col-md-12">
-                    <div class='tableauPlaceholder' id='viz1565052775301' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessAnalysis_15647983135240&#47;Dashboard7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565052775301');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='360px';vizElement.style.maxWidth='1280px';vizElement.style.width='100%';vizElement.style.minHeight='627px';vizElement.style.maxHeight='727px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>        </div>
-        
+                <div class='tableauPlaceholder' id='viz1565134045834' style='margin-left:10%; margin-top:50px; position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard2---&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='WorldHappinessAnalysis_15647983135240&#47;Dashboard2---' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard2---&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' /></object>
+                </div>
+                <script
+                    type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1565134045834'); 
+                    var vizElement = divElement.getElementsByTagName('object')[0]; 
+                    vizElement.style.minWidth = '360px'; vizElement.style.maxWidth = '1280px'; 
+                    vizElement.style.width = '100%'; vizElement.style.minHeight = '627px'; 
+                    vizElement.style.maxHeight = '727px'; vizElement.style.height = '700px'; 
+                    var scriptElement = document.createElement('script'); 
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p style='text-align:center'><strong>R-Squared = 0.617411, P-value < 0.0001<br>
+                            The happiest countries have higher life expectancy and higher human development indexes.
+                            It is not possible, however, to conclude if these indicators are core drivers of
+                            happiness.</strong></p>
             </div>
-    </div>        
-        <div class="row">
 
-            <div class="col-md-12">
-                    <div class='tableauPlaceholder' id='viz1565052026377' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;RegionandIncome&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessAnalysis_15647983135240&#47;RegionandIncome' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;RegionandIncome&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565052026377');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>            
-            </div>
         </div>
 
+        <div class="row" id='viz3'>
+            <div class="col-md-12">
+                <div class='tableauPlaceholder' id='viz1565134304398' style='margin-left:8%; margin-top:50px; position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard8---&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='path'
+                            value='views&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard8---?:embed=y&amp;:display_count=y' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard8---&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' /></object></div>
+                <script
+                    type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1565134304398'); 
+                    var vizElement = divElement.getElementsByTagName('object')[0]; 
+                    vizElement.style.minWidth = '360px'; vizElement.style.maxWidth = '1280px'; 
+                    vizElement.style.width = '100%'; vizElement.style.minHeight = '627px'; 
+                    vizElement.style.maxHeight = '727px'; vizElement.style.height = '700px'; 
+                    var scriptElement = document.createElement('script'); 
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p style='text-align:center'><strong>R-Squared = 0.549613, P-value < 0.0001 <br>
+                            While GDP per capita does seem to influence the happiness score,
+                            it does not have a strong correlation. Countries with lowest GDP per
+                            capita range from low to relatively high happiness scores.</strong></p>
+            </div>
+        </div>
+        <div class="row" id='viz4'>
+            <div class="col-md-12">
+                <div class='tableauPlaceholder' id='viz1565135172230' style='margin-left:8%; margin-top:50px; position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard4---&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='WorldHappinessAnalysis_15647983135240&#47;Dashboard4---' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard4---&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' /></object></div>
+                <script
+                    type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1565135172230'); 
+                    var vizElement = divElement.getElementsByTagName('object')[0]; 
+                    vizElement.style.minWidth = '360px'; vizElement.style.maxWidth = '1280px'; 
+                    vizElement.style.width = '100%'; vizElement.style.minHeight = '627px'; 
+                    vizElement.style.maxHeight = '727px'; vizElement.style.height = '700px'; 
+                    var scriptElement = document.createElement('script'); 
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p style='text-align: center'><strong>The World Bank classifies countries according to average
+                        population
+                        income in US dollars. This visualization illustrates ranges of hapiness score found withing
+                        these
+                        groups.</strong></p>
+            </div>
+        </div>
+        <div class="row" id='viz5'>
+            <div class="col-md-12">
+                <div class='tableauPlaceholder' id='viz1565135427062' style='margin-left:8%; margin-top:50px; position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard7---&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='WorldHappinessAnalysis_15647983135240&#47;Dashboard7---' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessAnalysis_15647983135240&#47;Dashboard7---&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' /></object></div>
+                <script
+                    type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1565135427062'); 
+                    var vizElement = divElement.getElementsByTagName('object')[0]; 
+                    vizElement.style.minWidth = '360px'; vizElement.style.maxWidth = '1280px'; 
+                    vizElement.style.width = '100%'; vizElement.style.minHeight = '627px'; 
+                    vizElement.style.maxHeight = '727px'; vizElement.style.height = '700px'; 
+                    var scriptElement = document.createElement('script'); 
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p style='text-align: center'><strong>This bar chart ranks the happiest country from the top to the
+                        bottom.</strong></p>
+            </div>
+        </div>
 
 </body>
 <!-- Footer -->
@@ -73,7 +243,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center color-bg" style="color:white; padding:1em 0em">
-        
+
         © 2019 Copyright: <a href="index.html">World Happiness</div>
     <!-- Copyright -->
 
